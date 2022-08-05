@@ -1,0 +1,40 @@
+﻿@model IEnumerable<TaskEntityFramework.Models.Category>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <a href="/Category/Create">Add Category</a>
+</head>
+<body>
+    <div> 
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>CategoryId</th>
+                    <th>CategoryName</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var item in Model)
+                {
+                    <tr>
+                    <td>@item.CategoryId </td>
+                        <td>@item.CategoryName</td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { @id = item.CategoryId })
+                        </td>
+                </tr>
+                }
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

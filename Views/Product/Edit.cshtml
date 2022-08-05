@@ -1,0 +1,42 @@
+﻿@model TaskEntityFramework.Models.Product
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <table>
+                @Html.HiddenFor(e=>e.ProductId)
+                <tr>
+                    <td>CategoryName</td>
+                    <td>
+                        @Html.DropDownListFor(e => e.CategoryId, ViewBag.Categories as List<SelectListItem>, "select Category")
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>ProductName</td>
+                    <td>
+                        @Html.TextBoxFor(e => e.ProductName)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="submit" />
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+
+</body>
+</html>

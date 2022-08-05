@@ -1,0 +1,64 @@
+﻿@model IEnumerable<TaskEntityFramework.Models.Product>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Display</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table" border="1">
+        <tr>
+            <th>
+                ProductId
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+            CategoryId
+            </th>
+            <th>
+                CategoryName
+            </th>
+            <th>Action</th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+               @item.CategoryId
+            </td>
+            <td>
+               @item.Category.CategoryName
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.ProductId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.ProductId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.ProductId })
+            </td>
+        </tr>
+    }
+    
+    </table>
+
+    <a href="/Product/Display/1 ">Next</a>
+    &nbsp
+    <a href="/Product/Display/0 ">Prev</a>
+</body>
+</html>

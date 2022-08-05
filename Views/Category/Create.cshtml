@@ -1,0 +1,30 @@
+﻿@model TaskEntityFramework.Models.Category
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    
+</head> 
+<body>
+    <div> 
+        @using (Html.BeginForm())
+        {
+            <table>
+                <tr>
+                    <td>CategoryName</td>
+                    <td>
+                        @Html.TextBoxFor(e => e.CategoryName)
+                    </td>
+                    <td><input type="submit"value="submit" /></td>
+                </tr>
+            </table>
+        }
+    </div>
+</body>
+</html>
