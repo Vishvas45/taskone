@@ -52,4 +52,6 @@ G:\c#practice\TaskEntityFramework\TaskEntityFramework\bin\Microsoft.Owin.Securit
 G:\c#practice\TaskEntityFramework\TaskEntityFramework\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 G:\c#practice\TaskEntityFramework\TaskEntityFramework\obj\Debug\TaskEntityFramework.dll
 G:\c#practice\TaskEntityFramework\TaskEntityFramework\obj\Debug\TaskEntityFramework.pdb
-G:\c#practice\TaskEntityFramework\TaskEntityFramework\obj\Debug\TaskEntityFramework.csprojResolveAssemblyReference.cache
+G:\c#practice\TaskEntityFramework\TaskEntityFramework\obj\Debug\TaskEntityFramework.csproj.AssemblyReference.cache
+G:\c#practice\TaskEntityFramework\TaskEntityFramework\obj\Debug\TaskEntityFramework.csproj.CoreCompileInputs.cache
+G:\c#practice\TaskEntityFramework\TaskEntityFramework\obj\Debug\TaskEntityFramework.csproj.CopyComplete
